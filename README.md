@@ -10,3 +10,4 @@ available](https://astroquery.readthedocs.io/en/latest/)
 here](https://github.com/openSAIL/MAST-API-Notebooks)
 * Additional API documentation can be [found 
 here](https://mast.stsci.edu/api/v0/)
+* Also, a simple command-line tool, based on astroquery, to retrieve JWST planned and HST existing observations is available. 
