@@ -159,7 +159,7 @@ def main():
         jwstplanned['t_exptime'].format = '%6.2f'
         jwstplanned['proposal_id','obs_title','proposal_pi','target_name','instrument_name','filters','t_exptime','s_ra','s_dec'].pprint(max_lines=mlines, max_width=-1)
 
-    except ValueError:
+    except (ValueError,KeyError) as e:
         if int(jwstplanned[0][0]) == 0:
             print("No Observations Found.")
         else:
@@ -176,7 +176,7 @@ def main():
         hsttaken['s_dec'].format = '%7.4f'
         hsttaken['t_exptime'].format = '%6.2f'
         hsttaken['proposal_id','obs_title','proposal_pi','target_name','instrument_name','filters','t_exptime','s_ra','s_dec'].pprint(max_lines=mlines, max_width=-1)
-    except ValueError:
+    except (ValueError,KeyError) as e:
         if int(hsttaken[0][0]) == 0:
             print("No Observations Found.")
         else:
